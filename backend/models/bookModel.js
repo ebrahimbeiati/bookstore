@@ -14,11 +14,7 @@ const bookSchema = mongoose.Schema(
         publishYear:{
             type: Number,
             required: true
-        },
-        pages:{
-            type: Number,
-            required: true
-        },
+        }
     },
     {
         timeStamps:true
@@ -26,4 +22,4 @@ const bookSchema = mongoose.Schema(
 )
 // Create schema for user data
 
-export const Book = mongoose.model("Cat", bookSchema);
+export const Book = mongoose.model("Book", bookSchema);
