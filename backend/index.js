@@ -1,15 +1,22 @@
 import express from "express";
 import { PORT, mondoDBURL } from "./config.js";
 import mongoose from "mongoose";
-import { Book } from "./models/bookModel.js";
-import booksRoute from "./routes/booksRoutes.js"
+import booksRoute from "./routes/booksRoutes.js";
+import cors from 'cors';
+
 
 const app = express();
 app.use(express.json());
 
+app.use(cors({
+    origin: "http://localhost:3000",
+    methods: "GET,PUT,POST,DELETE",
+    allowedHeaders:['Content-Type'],
+}));
+
 app.get("/", (request, response) => {
   console.log(request);
-  return response.status(2222).send("Hello World!");
+  return response.status(122).send("Hello World!");
 });
 app.use('/books',booksRoute);
 

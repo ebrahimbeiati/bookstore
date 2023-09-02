@@ -1,5 +1,5 @@
 import express from "express";
-import Book from "../models/bookModel.js";
+import { Book } from "../models/bookModel.js"; // Adjust the relative path as needed
 
 const router = express.Router();
 
