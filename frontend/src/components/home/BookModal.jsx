@@ -2,11 +2,11 @@ import {AiOutLinClose} from 'react-icons/ai'
 import {BiUserCircle} from 'react-icons/bi'
 import {PiBookOpenTextLight} from 'react-icons/pi'
 
-const BookModal = ({book, onClose}) => {
+const BookModal = ({ book, onClose}) => {
   return (
     <div
       className="fixed bg-black bg-opacity-50 top-0 left-0 right-0 bottom-0 z-50 flex justify-center items-center "
-      onClick={onclose}
+      onClick={onClose}
     >
       <div
         onClick={(event) => event.stopPropagation()}

@@ -47,7 +47,7 @@ router.get("/", async (request, response) => {
   }
 });
 // get book by id
-router.get("//:id", async (request, response) => {
+router.get("/:id", async (request, response) => {
   try {
     const { id } = request.params;
     const book = await Book.findById(id);

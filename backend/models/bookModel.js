@@ -4,20 +4,20 @@ const bookSchema = mongoose.Schema(
     {
         title:{
             type: String,
-            required: true
+            required: true,
 
         },
         author:{
             type: String,
-            required: true
+            required: true,
         },
         publishYear:{
             type: Number,
-            required: true
-        }
+            required: true,
+        },
     },
     {
-        timeStamps:true
+        timeStamps:true,
     }
 )
 // Create schema for user data
