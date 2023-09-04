@@ -3,12 +3,13 @@ import { AiOutlineEdit } from "react-icons/ai";
 import { BsInfoCircle } from "react-icons/bs";
 import {  MdOutlineDelete } from "react-icons/md";
 import PropTypes from "prop-types";
- BooksTable.propTypes = {
-  books: PropTypes.array.isRequired, 
- }
 
 
 const BooksTable = ({ books }) => {
+   BooksTable.propTypes = {
+     books: PropTypes.array.isRequired,
+   };
+
   return (
     <table className="w-full border-separate border-spacing-2">
       <thead>
